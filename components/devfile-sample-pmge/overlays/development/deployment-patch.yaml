@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pmge
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0067-tenant/tkwch-fix-0075-0067-app/devfile-sample-pmge@sha256:217aa1b99ced7be6d2f024797ee6583a197239c072a1fdbad5196c665372e28e
+        name: my-nodejs
+        resources: {}
+status: {}
